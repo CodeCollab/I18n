@@ -1,0 +1,24 @@
+{
+    "name": "codecollab/i18n",
+    "description": "Internationalization package of the CodeCollab project",
+    "version": "0.1.0",
+    "type": "library",
+    "keywords": ["codecollab", "i18n", "Internationalization"],
+    "homepage": "https://github.com/CodeCollab/I18n",
+    "license": "See the LICENSE file",
+    "authors": [
+        {
+            "name": "Pieter Hordijk",
+            "role": "Lead"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"CodeCollab\\I18n\\": "src/"}
+    },
+    "require": {
+        "php": ">=7.0-alpha"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.4.*"
+    }
+}
