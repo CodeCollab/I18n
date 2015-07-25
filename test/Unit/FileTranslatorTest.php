@@ -4,7 +4,7 @@ namespace CodeCollabTest\Unit\I18n;
 
 use CodeCollab\I18n\FileTranslator;
 
-class FileTranslatorTest extends \PHPUnit_Framework_TestCase// implements Translator
+class FileTranslatorTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @covers CodeCollab\I18n\FileTranslator::__construct
