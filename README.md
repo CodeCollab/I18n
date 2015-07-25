@@ -14,5 +14,5 @@ PHP7+
 
 [MIT][mit]
 
-[contributing]: https://github.com/CodeCollab/I18n/CONTRIBUTING.md
+[contributing]: https://github.com/CodeCollab/I18n/blob/master/CONTRIBUTING.md
 [mit]: http://spdx.org/licenses/MIT
