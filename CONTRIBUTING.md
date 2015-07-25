@@ -24,6 +24,10 @@ This project uses the following code style conventions / standards:
 - [PSR-2: Coding Style Guide][psr2]
 - [PSR-4: Autoloading Standard][psr4]
 
+Additionally all code needs to be run in strict mode. The strict mode declaration must be on the first line of the file with a single space between the PHP opening tag and `declare()`:
+
+    <?php declare(strict_types=1);
+
 [issues]: https://github.com/CodeCollab/I18n/issues
 [psr1]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md
 [psr2]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md
