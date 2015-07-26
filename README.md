@@ -2,6 +2,10 @@
 
 Internationalization package of the CodeCollab project
 
+## Status
+
+[![Build Status](https://travis-ci.org/CodeCollab/I18n.svg?branch=master)](https://travis-ci.org/CodeCollab/I18n) [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](mit)
+
 ## Requirements
 
 PHP7+
