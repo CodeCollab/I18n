@@ -25,8 +25,8 @@
         <whitelist>
             <directory suffix=".php">src/</directory>
             <exclude>
-                <file>src/CodeCollab/I18n/InvalidFileException.php</file>
-                <file>src/CodeCollab/I18n/UnsupportedLanguageException.php</file>
+                <file>src/InvalidFileException.php</file>
+                <file>src/UnsupportedLanguageException.php</file>
             </exclude>
         </whitelist>
     </filter>
