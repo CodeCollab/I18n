@@ -3,6 +3,9 @@
 namespace CodeCollabTest\Unit\I18n;
 
 use CodeCollab\I18n\FileTranslator;
+use CodeCollab\I18n\Translator;
+use CodeCollab\I18n\UnsupportedLanguageException;
+use CodeCollab\I18n\InvalidFileException;
 
 class FileTranslatorTest extends \PHPUnit_Framework_TestCase
 {
@@ -11,7 +14,7 @@ class FileTranslatorTest extends \PHPUnit_Framework_TestCase
      */
     public function testImplementsCorrectInterface()
     {
-        $this->assertInstanceOf('CodeCollab\I18n\Translator', new FileTranslator(TEST_DATA_DIR, 'en_US'));
+        $this->assertInstanceOf(Translator::class, new FileTranslator(TEST_DATA_DIR, 'en_US'));
     }
 
     /**
@@ -19,10 +22,8 @@ class FileTranslatorTest extends \PHPUnit_Framework_TestCase
      */
     public function testThrowsOnUnsupportedLanguage()
     {
-        $this->setExpectedException(
-            'CodeCollab\I18n\UnsupportedLanguageException',
-            'Unsupported language (`en`).'
-        );
+        $this->expectException(UnsupportedLanguageException::class);
+        $this->expectExceptionMessage('Unsupported language (`en`).');
 
         new FileTranslator(TEST_DATA_DIR, 'en');
     }
@@ -32,10 +33,8 @@ class FileTranslatorTest extends \PHPUnit_Framework_TestCase
      */
     public function testThrowsOnInvalidFormattedTranslationFile()
     {
-        $this->setExpectedException(
-            'CodeCollab\I18n\InvalidFileException',
-            'The translation file (`' . TEST_DATA_DIR . '/wrongformat.php`) has an invalid format.'
-        );
+        $this->expectException(InvalidFileException::class);
+        $this->expectExceptionMessage('The translation file (`' . TEST_DATA_DIR . '/wrongformat.php`) has an invalid format.');
 
         new FileTranslator(TEST_DATA_DIR, 'wrongformat');
     }
