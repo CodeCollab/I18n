@@ -1,7 +1,7 @@
 {
     "name": "codecollab/i18n",
     "description": "Internationalization package of the CodeCollab project",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "type": "library",
     "keywords": ["codecollab", "i18n", "Internationalization"],
     "homepage": "https://github.com/CodeCollab/I18n",

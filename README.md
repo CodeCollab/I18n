@@ -14,7 +14,7 @@ Include the library in your project using composer:
 
     {
         "require-dev": {
-            "codecollab/i18n": "1.0.*"
+            "codecollab/i18n": "^1"
         }
     }
 
